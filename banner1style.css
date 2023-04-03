@@ -58,7 +58,7 @@ body{
 .hero-image{
     height: 130px;
     position: relative;
-    -webkit-mask-image: url(/img/mask1.svg);
+    -webkit-mask-image: url(https://github.com/EmyApr/cs_banners/blob/main/img/mask1.svg);
     -webkit-mask-repeat: no-repeat;
 }
 
