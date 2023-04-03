@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    font-family: "effra", sans-serif;
+    font-weight: 300;
+}    
+.banner{
+    height: 90px;
+    width: 728px;
+    max-width: 728px;
+    overflow: hidden;background-color: #E2E2E2;
+}
+
+.color-block{
+    background-color: #828EE1;
+    width: 300px;
+    height: 90px;
+    position: relative;
+    left: 450px;
+    z-index: 0;
+
+}
+.banner-content{
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    max-height: 90px;
+    align-items: center;
+    max-width: 728px;
+    overflow: hidden;
+}
+.button{
+
+}
+.img{
+    flex: 2;
+}
+.text{
+    flex: 2.2;
+    font-size: 0.7rem;
+    line-height: 1;
+}
+
+.text p{
+    font-weight: 700;
+    font-size: 0.55rem;
+    margin-top: -12px;
+}
