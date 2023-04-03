@@ -10,14 +10,25 @@ body{
     overflow: hidden;background-color: #E2E2E2;
 }
 
+@keyframes color-block {
+    0%{left: -180px; }
+    20% {left: 390px ;}
+    100% {left: 390px ;}
+}
+
 .color-block{
     background-color: #828EE1;
-    width: 300px;
-    height: 90px;
+    width: 1000px;
+    height: 1000px;
     position: relative;
-    left: 450px;
+    left: -180px;
+    top:-200px;
     z-index: 0;
-
+    rotate: 40deg;
+    animation-name: color-block;
+    animation-duration: 15s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
 }
 .banner-content{
     z-index: 1;
@@ -26,18 +37,64 @@ body{
     flex-direction: row;
     max-height: 90px;
     align-items: center;
+    width: 728px;
     max-width: 728px;
     overflow: hidden;
 }
+@keyframes image {
+    0%{left: -400px; }
+    20% {left: 175px ;}
+    100% {left: 175px ;}
+}
+.image{
+    position: relative;
+    left: -400px;
+    animation-name: image;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    
+}
 
-.img{
-    flex: 2;
+.hero-image{
+    height: 130px;
+    position: relative;
+    -webkit-mask-image: url(/img/mask1.svg);
+    -webkit-mask-repeat: no-repeat;
+}
 
+@keyframes mask {
+    5%{left:-10px;}
+     26%{left:22px;}
+    100%{left:22px;}
+}
+.mask-img{
+    height: 148px;
+    position: relative;
+    left: 0px;
+    animation-name: mask;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes fade-in {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    20% {opacity: 1;}
+    100% {opacity: 1;}
 }
 .text{
-    flex: 2;
+    flex: 8;
+    position: absolute;
+    left: 178px;
+    width: 210px;
     font-size: 0.7rem;
     line-height: 1;
+    top: 1.5px;
+    z-index: 3;
+    animation-name: fade-in;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    opacity: 0;
 }
 
 .text p{
@@ -50,7 +107,23 @@ body{
     width: 135px;
     padding-left: 20px;
     padding-right: 25px;
-position: relative;
-top: 6px;
+    position: relative;
+    top: 3px;
+    animation-name: fade-in;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
 
+.button{
+    position: relative;
+    left: 208px;
+    height: 22px; border-radius: 25px;
+    background-color: #F49B35; color: white;
+    width: 95px; display: flex; flex-direction: row; align-items: center; justify-content: center;
+    box-shadow: 0px 0px 5px rgba(0,0,0,15%);
+    animation-name: fade-in;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    opacity: 0;
 }
