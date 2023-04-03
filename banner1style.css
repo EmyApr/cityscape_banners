@@ -29,14 +29,13 @@ body{
     max-width: 728px;
     overflow: hidden;
 }
-.button{
 
-}
 .img{
     flex: 2;
+
 }
 .text{
-    flex: 2.2;
+    flex: 2;
     font-size: 0.7rem;
     line-height: 1;
 }
@@ -45,4 +44,13 @@ body{
     font-weight: 700;
     font-size: 0.55rem;
     margin-top: -12px;
+}
+
+.logo{
+    width: 135px;
+    padding-left: 20px;
+    padding-right: 25px;
+position: relative;
+top: 6px;
+
 }
